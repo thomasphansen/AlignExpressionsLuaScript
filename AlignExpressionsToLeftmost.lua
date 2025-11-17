@@ -3,9 +3,9 @@ function plugindef()
     finaleplugin.Version = "1.0"
     finaleplugin.Date = "2025-11-15"
     finaleplugin.CategoryTags = "Expression"
-    finaleplugin.Notes = "Aligns selected expressions to the leftmost horizontal position."
+    finaleplugin.Notes = "Aligns selected expressions to the leftmost vertical position."
     return "Align Expressions (Leftmost)", "Align Expressions (Leftmost)",
-           "Aligns selected expressions horizontally to the leftmost expression."
+           "Aligns selected expressions vertically to the leftmost expression."
 end
 
 function align_leftmost()
@@ -20,14 +20,14 @@ function align_leftmost()
 
     local leftmost = nil
     for expr in each(expr_list) do
-        local x = expr.HorizontalPos
+        local x = expr.VerticalPos
         if (leftmost == nil) or (x < leftmost) then
             leftmost = x
         end
     end
 
     for expr in each(expr_list) do
-        expr.HorizontalPos = leftmost
+        expr.VerticalPos = leftmost
         expr:Save()
     end
 
