@@ -1,13 +1,13 @@
 # AlignExpressionsLuaScript
 
-A Lua plugin for Finale 27.x that aligns selected musical expressions to the leftmost horizontal position.
+A Lua plugin for Finale 27.x that aligns selected musical expressions to the leftmost vertical position.
 
 ## Description
 
-This plugin helps you quickly align multiple musical expressions (dynamics, tempo markings, text expressions, etc.) to the leftmost expression in your selection. This is useful when you want to ensure consistent horizontal alignment of expressions across multiple measures or staves.
+This plugin helps you quickly align multiple musical expressions (dynamics, tempo markings, text expressions, etc.) to the leftmost expression in your selection. This is useful when you want to ensure consistent vertical alignment of expressions across multiple measures or staves.
 
 The plugin will:
-- Find the leftmost horizontal position among all selected expressions
+- Find the leftmost vertical position among all selected expressions
 - Align all selected expressions to that position
 - Display a confirmation message showing how many expressions were aligned
 
