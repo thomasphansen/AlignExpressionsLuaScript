@@ -20,7 +20,7 @@ function align_leftmost()
 
     local leftmost = nil
     for expr in each(expr_list) do
-        local x = expr.GetVerticalPos()
+        local x = GetVerticalPos(expr)
         if (leftmost == nil) or (x < leftmost) then
             leftmost = x
         end
